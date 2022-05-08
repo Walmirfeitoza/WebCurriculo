@@ -1,0 +1,36 @@
+.hamburguer{
+    width: 2rem;
+    height: 2rem;  
+    position: fixed;
+    z-index: 100; /*valor relativo a profundide como se tivessem varias folhas o z define a profundidade qual vem primeiro*/
+    right: 2rem; 
+    top: 2rem;
+    display: flex; /*exbiçao flexivel*/
+    flex-direction: column; /*serao exibidos um embaixo do outro*/
+    justify-content: space-evenly; /*tipo de espaçamento*/
+    cursor: pointer;
+}
+
+.show-menu .hamburguer{
+    right: 16rem;
+}
+.line{
+    width: 100%;
+    height: .1rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 1px black;
+    transition: transform 1s;
+
+}
+
+.show-menu #line1{
+    transform: rotate(45deg)    translate(.3rem , .45rem); /*eixo x e y*/
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden; /*faz a linha desaparecer  */
+}
+.show-menu #line3{
+    transform: rotate(-45deg) translate(.3rem , -.45rem);;
+}

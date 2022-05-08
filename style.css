@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,500;1,200;1,300;1,400;1,600&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+/*para todos os elementos */
+*{
+    margin: 0;
+    padding: 0; /*margin interna dos elementos*/
+    list-style: none; /*tira todos os sublinhados*/
+    text-decoration: none;/*tira os pontos*/
+}
+html{
+    scroll-behavior: smooth; /*comportamento da barra de rolagem suavidado*/
+}
+:root{
+    --font-primary:"baloo 2" , serif;
+    --font-secundary:"Josefin Slab" ,serif;
+    --font-action:"muli" , serif;
+}
+
+
+
+
+header{
+    width:100%;
+    height: 100vh;  /*vh responsavel por mostrar a visualicao do elemento sera exibido no tamanho da tela altura da visualização*/
+      overflow: hidden; /*desabilita o cabeçalho passsa da janela de exbição sem rolagem para o lado*/
+      position: relative;/*tomara a posicao relativa para que banner tenha total absoluto*/
+}
+
+  .resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: 2px;
+  margin-left: 5rem;
+  border-left: 2px solid #a044ff;
+  position: relative;
+}
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #effbf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black;
+}
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #a044ff;
+}

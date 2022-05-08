@@ -1,0 +1,28 @@
+.img-wrapper{
+    width: 100%; /*ira ocupar 100% do seu container ira ocupar 100% da largura do header*/
+    height: 100; /*ira ocupar 100% da altura do header*/
+    overflow: hidden;
+    background-color: rgba(0, 0,6, 8);/*o ultimo é opacidade*/
+}
+
+/*tudo que for imagens que esta dentrp de img-wapper tera 100 do seu componente pai a img ocupara  */
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*faz que a img cubra a div a img fica fixa sem ser destocida*/
+    opacity: 0.8;
+    animation: zoom 17s;
+}
+/*animaçao keyframes funciona como um bloquinhos de desenho que tem varios desenho e vira uma animação*/
+
+/*nesse caso se chama zoom onde quando inicia a tela, sera de 0% e dara um zoom na imagem*/
+@keyframes zoom {
+    0%{
+          transform: scale(1.3); /*da um som de 1.3 30% na imagem*/
+    }
+    100%{
+        transform: scale(1); /*volta ao normal*/
+    }
+    
+}
+

@@ -1,0 +1,101 @@
+.projetos{
+    display: flex;
+    justify-content: space-evenly; /*espalhamento igualitario*/
+}
+
+.h1 h1{
+  font-family: var(--font-primary);
+  font-size: 3rem; 
+  text-align: center;
+  border-bottom: solid 3px #a044ff;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+.card{
+    width: 18rem;
+    height:25rem ;
+    margin-bottom: 1.5rem;
+    position: relative;
+    
+}
+.card-img-wrapper{
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  border-radius: .5rem;
+}
+.card-img-wrapper img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  opacity: .8;
+}
+.card-info{
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  text-shadow: 0.3 , 0.1rem 0.3rem rgba(0, 0, 0, .6);
+  opacity: 0;
+     visibility: hidden;
+     transition: all 1s;
+}
+.card-info h2{
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+
+}
+
+.card-info h3{
+  font-family: var(--font-secundary);
+  font-size: bolder;
+  font-weight: 500;
+  color: #ff4081;
+
+}
+
+.card-info p{
+  font-family: var(--font-secundary);
+  font-weight: 400;
+  color: #fff;
+  width: 80%;
+  margin-bottom: 2rem;
+
+}
+.card-info h3{
+  font-family: var(--font-secundary);
+  font-size: bolder;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1.5rem;
+
+}
+
+.card:hover .card-img-wrapper{
+    opacity: 0.5rem;     
+}
+.btn{
+      
+      background: #6a3093;  /* cor de fundo ui gradients*/
+      background: -webkit-linear-gradient(to bottom, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #eee;
+      border-radius: .5rem;
+      border: none;
+      box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+      cursor: pointer;
+}
+.card-info button {
+  width: 8rem;
+  height: 2.5rem;
+      
+  }
+
+  /*ao passar o mouse pelo card faça a configuracao em card-info*/
+.card:hover .card-info{
+bottom: 2rem;
+opacity: 1;
+visibility: visible;
+}
